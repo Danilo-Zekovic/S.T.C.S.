@@ -5,6 +5,12 @@ const BrowserWindow = electron.BrowserWindow;  // Module to create native browse
 // Report crashes to our server.
 electron.crashReporter.start();
 
+var onlineStatusWindow;
+app.on('ready', function() {
+  onlineStatusWindow = new BrowserWindow({ width: 0, height: 0, show: false });
+  onlineStatusWindow.loadURL('file://' + __dirname + '/online-status.html');
+});
+
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 var mainWindow = null;

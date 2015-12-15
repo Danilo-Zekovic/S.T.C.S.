@@ -33,5 +33,17 @@
     <button type="button" class="btn btn-default">Bootstrap button</button>
     <button type="button" class="btn btn-primary">Bootstrap button</button>
 
+    <h1>New part online/offline </h1>
+    <script>
+      var alertOnlineStatus = function() {
+        window.alert(navigator.onLine ? 'online' : 'offline');
+      };
+
+      window.addEventListener('online',  alertOnlineStatus);
+      window.addEventListener('offline',  alertOnlineStatus);
+
+      alertOnlineStatus();
+    </script>
+
   </body>
 </html>
