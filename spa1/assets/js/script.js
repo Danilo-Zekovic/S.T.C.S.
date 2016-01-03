@@ -1,3 +1,4 @@
+// Danilo Zekovic
 $(function () {
 
 	// Globals variables
