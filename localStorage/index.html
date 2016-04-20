@@ -4,19 +4,15 @@
     <title>
       Storage Practice
     </title>
+    <script src="main.js"></script>
   </header>
   <body>
     <h1>Hello World</h1>
+    <h3>Let's Leran Stuff</h3>
     <button type="button" onclick="myFunction()">Try it</button>
-    <script>
-      function myFunction(){
-        if(typeof(Storage) !== "undefined") {
-            console.log("There is local storage...");
-        } else {
-            console.log("There is no local storage!!!");
-        }
-      }
+    <button type="button" onclick="display()">Display Local Storage</button>
 
-    </script>
+    <h4 id="storage-content"></h4>
+
   </body>
 </html>
