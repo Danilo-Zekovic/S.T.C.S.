@@ -10,3 +10,7 @@ function myFunction(){
 function display(){
   document.getElementById("storage-content").innerHTML = localStorage.getItem("message");
 }
+
+function removeStorage() {
+  localStorage.removeItem("message");
+}
