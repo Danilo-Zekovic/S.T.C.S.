@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <heder>
+    <title>
+      Storage Practice
+    </title>
+  </header>
+  <body>
+    <h1>Hello World</h1>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <script>
+      function myFunction(){
+        if(typeof(Storage) !== "undefined") {
+            console.log("There is local storage...");
+        } else {
+            console.log("There is no local storage!!!");
+        }
+      }
+
+    </script>
+  </body>
+</html>
