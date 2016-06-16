@@ -1,0 +1,10 @@
+{
+  "name": "opa",
+  "version": "0.1.0",
+  "description": "An example SPA",
+  "main": "app.js",
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-google-login": "^1.0.6"
+  }
+}
